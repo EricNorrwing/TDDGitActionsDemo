@@ -18,4 +18,10 @@ public class TestStringManipulator {
     public void formatTextTest() {
         Assertions.assertEquals("This is a string", stringManipulator.formatText("tHiS iS A sTrInG"));
     }
+
+    @Test
+    @DisplayName("This is a failing test")
+    public void failingTest () {
+        Assertions.assertEquals(2, 3);
+    }
 }
